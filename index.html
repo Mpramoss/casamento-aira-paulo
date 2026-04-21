@@ -154,15 +154,31 @@
 
 
 <!--PARTE DO PIX-->
-<div id="pixModal" class="pix-modal">
+<!-- MODAL PIX ÚNICO -->
+<div id="pixModal" class="pix-modal" style="display:none;">
+
     <div class="pix-box">
         <h3>💛 Presente via PIX</h3>
-        <p>Chave PIX:</p>
-        <input type="text" id="pixKey" value="00020126430014BR.GOV.BCB.PIX0121airagrecia5@gmail.com5204000053039865802BR5925Aira Grecia Almeida Palme6009SAO PAULO62140510AitfdTMz0M6304D41D" readonly>
+
+        <!-- QR CODE -->
+        <img src="qrcode-pix.png" alt="QR Code PIX" style="width:200px; margin:10px 0;">
+
+        <p>Escaneie o QR Code ou copie a chave</p>
+
+        <input type="text" id="pixKey"
+        value="00020126430014BR.GOV.BCB.PIX0121airagrecia5@gmail.com5204000053039865802BR5925Aira Grecia Almeida Palme6009SAO PAULO62140510AitfdTMz0M6304D41D"
+        readonly style="width:100%; padding:8px;">
+
         <button onclick="copiarPix()">Copiar chave</button>
+        <br><br>
         <button onclick="fecharPix()">Fechar</button>
+
     </div>
+
 </div>
+
+
+
 
 </body>
 </html>
